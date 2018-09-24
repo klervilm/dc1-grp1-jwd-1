@@ -10,7 +10,7 @@
                     <i class="fa fa-user"></i>  
                     Mon profil
                 </a>
-                <a href="#" class="dropdown-item">
+                <a href="logout.php" class="dropdown-item">
                     <i class="fa fa-sign-out"></i> 
                     Déconnexion
                 </a>
