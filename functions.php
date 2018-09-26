@@ -25,3 +25,19 @@ function getMenu() {
 function getFooter() {
     require_once 'layout/footer.php';
 }
+
+function isActive(string $url, bool $endwith =false): bool {
+    if (
+            (!$endwith && strpos($_SERVER['REQUEST_URI'],$url))
+            || ($endwith && endsWith($_SERVER['REQUEST_URI'],$url))
+            ) {
+        return true;
+    }
+    return false;
+}
+
+function endsWith(string $str, string $search): bool {
+    $length = strlen($search);
+    return substr($str, -$length) === $search;
+}
+

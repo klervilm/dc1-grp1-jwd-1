@@ -5,3 +5,5 @@ $db_name = "dc1_grp1_jwd" ;
 $db_user = "root" ;
 $db_pass = "root" ;
 
+$siteurl = "http://localhost:8888/dc1-grp1-jwd-1/";
+$siteadmin = $siteurl . "admin/";
