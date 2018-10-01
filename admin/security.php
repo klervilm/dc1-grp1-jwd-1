@@ -6,7 +6,6 @@ require_once __DIR__ . '/../model/database.php';
 $user = null;
 
 if (isset($_SESSION['id'])) {
-    print_r($_SESSION);
     // L'utilisateur est déjà connecté
     $user = getEntity('utilisateur', $_SESSION['id']);
 } else if (isset($_POST['email']) && isset($_POST['password'])) {
@@ -22,4 +21,6 @@ if (isset($_SESSION['id'])) {
 
 if(!$user) {
     header('Location: login.php');
+} else if (!$user['admin']){
+    header('Location: ../');
 }
