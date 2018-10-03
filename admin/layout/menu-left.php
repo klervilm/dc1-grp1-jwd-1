@@ -11,7 +11,7 @@
               <li class="nav-item">
                 <a class="nav-link <?php echo isActive("/crud/photo/") ? 'active' : ''; ?>" href="<?php echo $siteadmin; ?>crud/photo/">
                   <i class="fa fa-picture-o"></i>
-                  Photo
+                  Photos
                 </a>
               </li>
               <li class="nav-item">
