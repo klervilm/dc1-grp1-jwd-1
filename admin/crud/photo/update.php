@@ -25,7 +25,7 @@ require_once '../../layout/header.php'; ?>
     
     <div class="form-group">
         <label>Image</label>
-        <input type="file" name="image" class="form-control" required>
+        <input type="file" name="image" class="form-control">
         <?php if($photo["image"]) : ?>
         <img src="../../../uploads/<?php echo $photo["image"]; ?>" class="img-thumbnail">
         <?php endif; ?>
